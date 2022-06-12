@@ -65,36 +65,36 @@ function Register() {
                 <div className="col-md-6">
                         <label htmlFor="firstName" className="form-label">First Name</label>
                         <input type="text" onChange={handleChange} value={values.firstName} onBlur={handleBlur} name="firstName" className="form-control" id="firstName" />
-                    <p className='error'>{errors.firstName}</p>
+                    <p className='error'>{touched.firstName && errors.firstName ? errors.firstName : null}</p>
                     </div>
                     <div className="col-md-6">
                         <label htmlFor="lastName" className="form-label">Last Name</label>
                         <input type="text" onChange={handleChange} value={values.lastName} onBlur={handleBlur} name="lastName" className="form-control" id="lastName" />
-                        <p className='error'>{errors.lastName}</p>
+                        <p className='error'>{touched.lastName && errors.lastName ? errors.lastName : null}</p>
                     
                     </div>
                     <div className="col-md-6">
                         <label htmlFor="email" className="form-label">Email</label>
                         <input type="email"  onChange={handleChange} value={values.email} onBlur={handleBlur} name='email' className="form-control" id="email" />
-                        <p className='error'>{errors.email}</p>
+                        <p className='error'>{touched.email && errors.email ? errors.email : null}</p>
                     
                     </div>
                     <div className="col-md-6">
                         <label htmlFor="password" className="form-label">Password</label>
                         <input type="password"  onChange={handleChange} value={values.password} onBlur={handleBlur} name='password' className="form-control" id="password" />
-                        <p className='error'>{errors.password}</p>
+                        <p className='error'>{touched.password && errors.password ? errors.password : null}</p>
                    
                     </div>
                     <div className="col-12">
                         <label htmlFor="address" className="form-label">Address</label>
                         <input type="text"  onChange={handleChange} value={values.address} onBlur={handleBlur} name='address' className="form-control" id="address" placeholder="1234 Main St" />
-                        <p className='error'>{errors.address}</p>
+                        <p className='error'>{touched.address && errors.address ? errors.address : null}</p>
                    
                     </div>
                     <div className="col-md-6">
                         <label htmlFor="city" className="form-label">City</label>
                         <input type="text"  onChange={handleChange} value={values.city} onBlur={handleBlur} name='city' className="form-control" id="city" />
-                        <p className='error'>{errors.city}</p>
+                        <p className='error'>{touched.city && errors.city ? errors.city : null}</p>
                   
                     </div>
                     <div className="col-md-4">
@@ -107,13 +107,13 @@ function Register() {
                             <option>Andrapradesh</option>
                             <option>Goa</option>
                         </select>
-                    <p className='error'>{errors.state}</p>
+                    <p className='error'>{touched.state && errors.state ? errors.state : null}</p>
 
                     </div>
                     <div className="col-md-2">
                         <label htmlFor="zip" className="form-label">Zip</label>
                         <input type="text"  onChange={handleChange} value={values.zip} onBlur={handleBlur} name='zip' className="form-control" id="zip" />
-                        <p className='error'>{errors.zip}</p>
+                        <p className='error'>{touched.zip && errors.zip ? errors.zip : null}</p>
                     
                     </div>
   
