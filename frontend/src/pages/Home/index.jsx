@@ -1,8 +1,9 @@
 import React from 'react'
 import "./Home.css"
-import Header from "../../components/Header/index"
-import Slider from '../../components/Slider/index'
-import Card from "../../components/Card/index"
+import Header from "../../components/Header"
+import Slider from '../../components/Slider'
+import Card from "../../components/Card"
+import Footer from '../../components/Footer'
 function Home() {
   return (
     <div className="home-wrapper">
@@ -22,6 +23,7 @@ function Home() {
           <Card />
           </div>
         </div>
+        <Footer/>
     </div>
   )
 }
