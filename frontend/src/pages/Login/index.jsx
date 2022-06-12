@@ -21,11 +21,11 @@ function Login() {
                 <hr />
                 <form className="row g-3">
                     <div className="col-md-12">
-                        <label for="inputEmail4" className="form-label">Email</label>
+                        <label htmlFor="inputEmail4" className="form-label">Email</label>
                         <input type="email" className="form-control" id="inputEmail4" />
                     </div>
                     <div className="col-md-12">
-                        <label for="inputPassword4" className="form-label">Password</label>
+                        <label htmlFor="inputPassword4" className="form-label">Password</label>
                         <input type="password" className="form-control" id="inputPassword4" />
                     </div>
                     
